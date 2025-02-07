@@ -40,8 +40,8 @@ const Projects = () => {
       <div className="resume-section">
           <h2 className="section-title text-light bi-person-lines-fill"> MyProjects</h2>
           <ul className="list-group">
-              <li className="list-group-item-dark"><strong>Веб-додаток на ASP.NET Core + React.js</strong> – На данний момент в процесі розробки, в майбутньому планується розділення на фронтенд на React та бекенд на ASP.</li>
-              <li className="list-group-item-dark"><strong>Веб-додаток тільки на ASP.NET Core на мікросервісній архітектурі.</strong> – Використання Docker + Minikube, інтеграція RabbitMQ, підключення та написання власних сервісів.</li>
+              <li className="list-group-item-dark"><strong>Веб-додаток на ASP.NET Core на мікросервісній архітектурі.</strong> – Використання Docker + Minikube, інтеграція RabbitMQ, підключення та написання власних сервісів.</li>
+              <li className="list-group-item-dark"><strong>Веб-додаток на ASP.NET Core + React.js</strong> – На данний момент в процесі розробки, розділення на фронтенд на React та бекенд на ASP.</li>
           </ul>
       </div>
   );
@@ -93,24 +93,25 @@ const About = () => {
   }
 
   const Resume = () => {
-      return (
-          <div className="container resume-container">
-              <div className="row g-4">
-                  {/* About Me - займатиме одну колонку на малих екранах */}
-                  <div className="col-4 sticky-column">
-                      <About />
-                  </div>
-                  {/* Education + Skills + Projects - розподіляються на великих екранах */}
-                  <div className="col-8 scrollable-column">
-                      <Education />
-                      <HardSkills />
-                      <SoftSkills />
-                      <Projects />
-                  </div>
-              </div>
-          </div>
-      );
-  };
+    return (
+        <div className="container resume-container">
+            <div className="row g-4">
+                {/* About Me - займає 100% ширини на маленьких екранах */}
+                <div className="col-md-4 col-12 sticky-column">
+                    <About />
+                </div>
+                {/* Контент буде на всю ширину на маленьких екранах */}
+                <div className="col-md-8 col-12 scrollable-column">
+                    <HardSkills />
+                    <SoftSkills />
+                    <Projects />
+                    <Education />
+                </div>
+            </div>
+        </div>
+    );
+};
+
   
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

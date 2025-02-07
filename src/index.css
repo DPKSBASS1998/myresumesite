@@ -1,5 +1,6 @@
 /* Загальні налаштування */
 /* Загальні налаштування */
+/* Загальний стиль для body */
 body {
   background-image: url("/src/img/1.png"); /* Фонове зображення */
   background-size: cover; /* Розтягнути на весь екран */
@@ -12,8 +13,16 @@ body {
   align-items: center; /* Центруємо по вертикалі */
   justify-content: center; /* Центруємо по горизонталі */
   height: 100vh; /* Вся висота екрану */
-  overflow: hidden;
+  overflow: hidden; /* Заборона на прокрутку */
 }
+
+/* Для мобільних пристроїв (екрани менше 768px) */
+@media (max-width: 767px) {
+  body {
+    overflow: auto; /* Дозволяємо прокрутку */
+  }
+}
+
 
 /* Основний контейнер */
 .resume-container {
@@ -101,26 +110,45 @@ body {
 
 .avatar {
   background-image: url("img/Avatar.jpg");
-  width: 200px;          /* Встановіть ширину */
-  height: 200px;         /* Встановіть висоту */
-  background-size: cover; /* Підтягне зображення в контейнер */
-  background-position: center; /* Центрує зображення */
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
   margin: 20px auto;
-  border-radius: 50%;    /* Зробить зображення круглим */
 }
 
-/* Ліва колонка - фіксована */
-.sticky-column {
-  position: sticky;
-  top: 0; /* Фіксуємо її на верху */
-  height: 97vh; /* Висота для лівої колонки */
+/* Прокрутка для правої колонки на великих екранах */
+@media (min-width: 768px) {
+  .scrollable-column {
+    max-height: 97vh; /* Висота для правої колонки */
+    overflow-y: auto; /* Додаємо вертикальну прокрутку */
+  }
+
+  /* Ліва колонка залишається фіксованою */
+  .sticky-column {
+    position: sticky;
+    top: 0; /* Ліва колонка прикріплюється до верхнього краю */
+    height: 100vh; /* Висота на весь екран */
+    overflow-y: auto; /* Можна додавати прокручування, якщо потрібно */
+  }
 }
 
-/* Права колонка - прокручується */
-.scrollable-column {
-  max-height: 97vh; /* Висота для правої колонки */
-  overflow-y: auto; /* Додаємо вертикальну прокрутку */
+/* Для мобільних пристроїв */
+@media (max-width: 767px) {
+  /* Ліва колонка: робимо прокручуваною */
+  .sticky-column {
+    position: relative; /* Вимикаємо sticky */
+    height: auto; /* Повна висота для лівої колонки */
+  }
+
+  /* Права колонка: також прокручувана */
+  .scrollable-column {
+    height: auto; /* Знімаємо обмеження висоти */
+    overflow-y: auto; /* Додаємо вертикальну прокрутку */
+  }
 }
+
 
 
 
