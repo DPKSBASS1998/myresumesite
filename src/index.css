@@ -1,0 +1,127 @@
+/* Загальні налаштування */
+/* Загальні налаштування */
+body {
+  background-image: url("/src/img/1.png"); /* Фонове зображення */
+  background-size: cover; /* Розтягнути на весь екран */
+  color: #e0e0e0; /* Світло-сірий текст */
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  
+  display: flex;
+  align-items: center; /* Центруємо по вертикалі */
+  justify-content: center; /* Центруємо по горизонталі */
+  height: 100vh; /* Вся висота екрану */
+  overflow: hidden;
+}
+
+/* Основний контейнер */
+.resume-container {
+  max-width: 1600px;
+  width: 100%;
+  height: 100vh; /* Контейнер на всю висоту */
+  border-right: 1px solid rgba(255, 255, 255, 0.1); /* Тонка лінія */
+  border-right: 1px solid rgba(255, 255, 255, 0.1); /* Тонка лінія */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* М'яка тінь */
+}
+
+
+.resume-section {
+  padding: 25px;
+  margin-bottom: 20px;
+  background: rgba(37, 37, 37, 0.7); /* Темний фон з більшою прозорістю */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: #e0e0e0; /* Білий або світлий текст */
+}
+
+
+/* Заголовки */
+.resume-title {
+  color: #e0e0e0; /* Світло-сірий */
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Легка тінь */
+}
+
+.resume-subtitle {
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  color: #b0b0b0; /* Світло-сірий */
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.2em;
+  color: #b0b0b0;
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+/* Списки */
+.list-group-item-dark {
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+}
+
+.list-group-item-dark:hover {
+  background: #404040; /* Світліший сірий при наведенні */
+  color: #f0f0f0; /* Світліший текст */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* М'яка тінь */
+  transform: scale(1.02);
+}
+
+/* Проекти */
+.project-item {
+  border-left: 5px solid #555555; /* Тонка сірка лінія зліва */
+  padding-left: 15px;
+  font-weight: bold;
+  color: #e0e0e0;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6); /* Легка тінь */
+}
+
+/* Кольори */
+.text-primary {
+  color: #b0b0b0; /* Світло-сірий */
+}
+
+.text-success {
+  color: #d0d0d0; /* Легкий відтінок сірого для успіху */
+}
+
+.text-danger {
+  color: #808080; /* Темно-сірий для небезпеки */
+}
+
+.full-height {
+  height: 100%; /* Вся висота екрану */
+}
+
+.avatar {
+  background-image: url("img/Avatar.jpg");
+  width: 200px;          /* Встановіть ширину */
+  height: 200px;         /* Встановіть висоту */
+  background-size: cover; /* Підтягне зображення в контейнер */
+  background-position: center; /* Центрує зображення */
+  margin: 20px auto;
+  border-radius: 50%;    /* Зробить зображення круглим */
+}
+
+/* Ліва колонка - фіксована */
+.sticky-column {
+  position: sticky;
+  top: 0; /* Фіксуємо її на верху */
+  height: 97vh; /* Висота для лівої колонки */
+}
+
+/* Права колонка - прокручується */
+.scrollable-column {
+  max-height: 97vh; /* Висота для правої колонки */
+  overflow-y: auto; /* Додаємо вертикальну прокрутку */
+}
+
+
+
+
