@@ -2,7 +2,7 @@
   "name": "myresumesite",
   "version": "0.1.0",
   "private": true,
-  
+  "homepage": "https://DPKSBASS1998.github.io/myresumesite",
   "dependencies": {
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
