@@ -13,8 +13,8 @@ const HardSkills = () => {
           <h2 className="section-title text-light  bi-person-gear"> HardSkills</h2>
           <ul className="list-group">
               <li className="list-group-item-dark bi-code-slash"> <strong>Мови програмування:</strong> C# (розробка кросплатформених додатків, веб-додатків та мікросервісів), Java (базові знання), PHP (базові знання).</li>
-              <li className="list-group-item-dark bi-gear-wide-connected"> <strong>Фреймворки та технології:</strong> ASP.NET Core, Entity Framework Core, React.js (початковий рівень), HTML5, CSS3, JavaScript, Bootstrap.</li>
-              <li className="list-group-item-dark bi-database"> <strong>Бази даних:</strong> SQL (розробка складних запитів, курсори, тригери, представлення), PostgreSQL (базові знання).</li>
+              <li className="list-group-item-dark bi-gear-wide-connected"> <strong>Фреймворки та технології:</strong> ASP.NET Core, Entity Framework Core, React.js (початковий рівень), HTML5, CSS3, JavaScript, Bootstrap, Tailwind, MUI.</li>
+              <li className="list-group-item-dark bi-database"> <strong>Бази даних:</strong> SQL (базові знання) PostgreSQL (базові знання).</li>
               <li className="list-group-item-dark bi-boxes"> <strong>Контейнеризація та мікросервіси:</strong> Docker, Minikube, RabbitMQ.</li>
           </ul>
       </div>
@@ -50,7 +50,7 @@ const Projects = () => {
 const Education = () => {
   return (
       <div className="resume-section">
-          <h2 className="section-title text-light bi-mortarboard"> Освіта</h2>
+          <h2 className="section-title text-light bi-mortarboard"> Education</h2>
             <ul className="list-group">
             <li className="list-group-item-dark">
               <p><strong>Дніпропетровський національний університет ім. Олеся Гончара.</strong></p>
@@ -62,24 +62,50 @@ const Education = () => {
 };
 
 const About = () => {
-  return (
+    return (
       <div className="resume-section full-height">
-          <div className="avatar"></div>
-          <h4>Більницький Владислав Ігорович</h4>
-          <hr/>
-          <h2 className="section-title text-light text-decoration-underline">Контакти</h2>
-
-          <ul className="list-group">
-              <li className="list-group-item-dark bi-envelope-at"> <strong>Email: bvivladislav@gmail.com</strong></li>
-              <li className="list-group-item-dark bi-telephone"> <strong>Телефон: +380960923617</strong></li>
-              <li className="list-group-item-dark bi-telegram"> <strong>Telegram: @bvivladislav</strong></li>
-              <li className="list-group-item-dark bi-github"> <strong>GitHub: DPKSBASS1998</strong></li>
-          </ul>
-          <hr/>
-          
-      </div>
+        <div className="avatar"></div>
+        <h4>Більницький Владислав Ігорович</h4>
+        <hr />
+        <h2 className="section-title text-light text-decoration-underline">Контакти</h2>
   
-  )}
+        <ul className="list-group">
+          <li className="list-group-item-dark bi-envelope-at">
+            <strong>
+              <a href="mailto:bvivladislav@gmail.com" className="text-light text-decoration-none">
+                _Email: bvivladislav@gmail.com
+              </a>
+            </strong>
+          </li>
+          <li className="list-group-item-dark bi-telephone">
+            <strong>
+              <a href="tel:+380960923617" className="text-light text-decoration-none">
+                _Телефон: +380960923617
+              </a>
+            </strong>
+          </li>
+          <li className="list-group-item-dark bi-telegram">
+            <strong>
+              <a href="https://t.me/bvivladislav" target="_blank" rel="noopener noreferrer" className="text-light text-decoration-none">
+                _Telegram: @bvivladislav
+              </a>
+            </strong>
+          </li>
+          <li className="list-group-item-dark bi-github">
+            <strong>
+              <a href="https://github.com/DPKSBASS1998" target="_blank" rel="noopener noreferrer" className="text-light text-decoration-none">
+                _GitHub: DPKSBASS1998
+              </a>
+            </strong>
+          </li>
+        </ul>
+        <hr />
+      </div>
+    );
+  };
+  
+  export default About;
+  
 
   const AboutME = () => {
       return (
