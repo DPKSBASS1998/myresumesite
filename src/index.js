@@ -62,47 +62,56 @@ const Education = () => {
 };
 
 const About = () => {
-    return (
-      <div className="resume-section full-height">
-        <div className="avatar"></div>
-        <h4>Більницький Владислав Ігорович</h4>
-        <hr />
-        <h2 className="section-title text-light text-decoration-underline">Контакти</h2>
-  
-        <ul className="list-group">
-          <li className="list-group-item-dark bi-envelope-at">
-            <strong>
-              <a href="mailto:bvivladislav@gmail.com" className="text-light text-decoration-none">
-                _Email: bvivladislav@gmail.com
-              </a>
-            </strong>
-          </li>
-          <li className="list-group-item-dark bi-telephone">
-            <strong>
-              <a href="tel:+380960923617" className="text-light text-decoration-none">
-                _Телефон: +380960923617
-              </a>
-            </strong>
-          </li>
-          <li className="list-group-item-dark bi-telegram">
-            <strong>
-              <a href="https://t.me/bvivladislav" target="_blank" rel="noopener noreferrer" className="text-light text-decoration-none">
-                _Telegram: @bvivladislav
-              </a>
-            </strong>
-          </li>
-          <li className="list-group-item-dark bi-github">
-            <strong>
-              <a href="https://github.com/DPKSBASS1998" target="_blank" rel="noopener noreferrer" className="text-light text-decoration-none">
-                _GitHub: DPKSBASS1998
-              </a>
-            </strong>
-          </li>
-        </ul>
-        <hr />
-      </div>
-    );
-  };
+  return (
+    <div className="resume-section full-height">
+      <div className="avatar"></div>
+      <h4>Більницький Владислав Ігорович</h4>
+      <hr />
+      <h2 className="section-title text-light text-decoration-underline">Контакти</h2>
+
+      <ul className="list-group">
+        <li className="list-group-item-dark bi-envelope-at">
+          <strong>
+            <a href="mailto:bvivladislav@gmail.com" className="text-light text-decoration-none">
+              _Email: bvivladislav@gmail.com
+            </a>
+          </strong>
+        </li>
+        <li className="list-group-item-dark bi-telephone">
+          <strong>
+            <a href="tel:+380960923617" className="text-light text-decoration-none">
+              _Телефон: +380960923617
+            </a>
+          </strong>
+        </li>
+        <li className="list-group-item-dark bi-telegram">
+          <strong>
+            <a href="https://t.me/bvivladislav" target="_blank" rel="noopener noreferrer" className="text-light text-decoration-none">
+              _Telegram: @bvivladislav
+            </a>
+          </strong>
+        </li>
+        <li className="list-group-item-dark bi-github">
+          <strong>
+            <a href="https://github.com/DPKSBASS1998" target="_blank" rel="noopener noreferrer" className="text-light text-decoration-none">
+              _GitHub: DPKSBASS1998
+            </a>
+          </strong>
+        </li>
+      </ul>
+
+      <hr />
+
+      <h2 className="section-title text-light text-decoration-underline">Знання мов</h2>
+      <ul className="list-group text-center">
+        <li className="list-group-item-dark"> <strong>Українська: рідна</strong></li>
+        <li className="list-group-item-dark"><strong>Англійська: B1</strong></li>
+      </ul>
+
+      <hr />
+    </div>
+  );
+};
   
   export default About;
   
