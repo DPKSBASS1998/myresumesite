@@ -40,9 +40,35 @@ const Projects = () => {
       <div className="resume-section">
           <h2 className="section-title text-light bi-person-lines-fill"> MyProjects</h2>
           <ul className="list-group">
-              <li className="list-group-item-dark"><strong>Веб-додаток на ASP.NET Core на мікросервісній архітектурі.</strong> – Використання Docker + Minikube, інтеграція RabbitMQ, підключення та написання власних сервісів.</li>
-              <li className="list-group-item-dark"><strong>Веб-додаток на ASP.NET Core + React.js</strong> – На данний момент в процесі розробки, розділення на фронтенд на React та бекенд на ASP.</li>
-          </ul>
+              <li className="list-group-item-dark">Веб-додаток на ASP.NET Core на мікросервісній архітектурі. – Використання Docker + Minikube, інтеграція RabbitMQ, підключення та написання власних сервісів.</li>
+              <li className="list-group-item-dark">
+                <a href="https://github.com/DPKSBASS1998/MyFirstWebApiProject" className="text-light text-decoration-none">
+                  Веб-додаток на ASP.NET Web API + React.js (у процесі розробки). Розділення проєкту на фронтенд (React.js) та бекенд (ASP.NET Web API)
+                </a>
+              </li>
+
+              <li className="list-group-item-dark">
+                <a href="https://github.com/DPKSBASS1998/webapp" className="text-light text-decoration-none">
+                  Простий веб-додаток на ASP.NET MVC
+                </a>
+              </li>
+
+              <li className="list-group-item-dark">
+                <a href="https://github.com/DPKSBASS1998/mywebsite" className="text-light text-decoration-none">
+                  Складний веб-додаток на ASP.NET MVC (в розробці)
+                </a>
+              </li>
+              <li className="list-group-item-dark">
+                <a href="https://github.com/DPKSBASS1998/MyMediaRegulationApp" className="text-light text-decoration-none">
+                  C# WinForms додаток - додаток для регулювання гучності Spotify, з оверлеєм.
+                </a>
+              </li>
+              <li className="list-group-item-dark">
+                <a href="https://github.com/DPKSBASS1998/myresumesite" className="text-light text-decoration-none">
+                  React.js сайт - сайт-портфоліо
+                </a>
+              </li>
+            </ul>
       </div>
   );
 };
@@ -115,18 +141,6 @@ const About = () => {
   
   export default About;
   
-
-  const AboutME = () => {
-      return (
-          <div className="resume-section">
-              <h2 className="text-info section-title">Про мене</h2>
-              <p className="" >Привіт! Мене звати Владислав, я студент 3 курсу Дніпропетровського національного університету ім. Олеся Гончара, навчаюсь на спеціальності "Комп'ютерна інженерія".</p>
-              <p>Маю досвід роботи менеджером технічної підтримки в компанії з розробки програмного забезпечення. Під час роботи вдалося навчитися вирішувати технічні проблеми, працювати в команді та використовувати англійську мову в робочому середовищі.</p>
-              <p>Маю бажання розвиватися в сфері розробки програмного забезпечення, вивчати нові технології та покращувати свої навички.</p>
-          </div>
-      )
-  }
-
   const Resume = () => {
     return (
         <div className="container resume-container">
